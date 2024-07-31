@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <h1>Typo<span style="color: rgb(44, 54, 91);;"> Testing</span></h1>
+    </nav>
+
+    <div class="container">
+        <div class="text-container">
+            <ul class="first-row"></ul>
+            <ul class="second-row"></ul>
+        </div>
+
+        <div class="controls">            
+            <input type="text" name="text" id="text" class="textInput" value="" dir="ltr" placeholder="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            
+            <p class="timer">01:00</p>
+            
+            <button onclick="location.reload();">Restart</button>
+        </div>
+    </div>
+
+    <div class="report">
+        <h5 style="color: rgb(2, 90, 2);">Result</h5>
+        <ol>
+            <li style="color: rgb(2, 90, 2);" class="wpm-container">
+                <span class="wpm"></span>
+                <p>(Words per minute)</p>
+            </li>
+            <li style="color: rgb(2, 90, 2);">
+               <span>Accuracy:</span><span class="accuracy"></span>
+            </li>
+            <li style="color: rgb(2, 90, 2);">
+                <span>Correct keystrokes:</span><span class="right-keystrokes"></span>
+            </li>
+            <li style="color: rgb(193, 9, 9);">
+                <span>Incorrect keystrokes:</span><span class="wrong-keystrokes"></span>
+            </li>
+            <li style="color: rgb(2, 90, 2);">
+                <span>Correct words:</span><span class="right-words"></span>
+            </li>
+            <li style="color: rgb(193, 9, 9);">
+                <span>Incorrect words:</span><span class="wrong-words"></span>
+            </li>
+        </ol>
+        <button onclick="location.reload();">Restart</button>
+    </div>
+</body>
+
+</html>
